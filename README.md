@@ -4,7 +4,7 @@ Module 10 Challenge
 # Background
 The project's aim is to do a climate analysis of Honolulu, Hawaii. The following sections include the analysis. 
 
-**Part 1: Analyse and Explore the Climate Data**
+**Part 1: Analyse and Explore the Climate Data**\
 This section uses Python and SQLAlchemy to do a fundamental climate analysis and data exploration of the climate database. Specifically, use SQLAlchemy ORM queries, Pandas, and Matplotlib. To do so, complete the following steps:
 1. use the provided files (climate_starter.ipynb and hawaii.sqlite) to complete climate analysis and data exploration.
 2. Use the SQLAlchemy create_engine() function to connect to SQLite database.
@@ -35,4 +35,25 @@ This section uses Python and SQLAlchemy to do a fundamental climate analysis and
   ![image](https://github.com/lakigit/sqlalchemy-challenge/assets/138610916/7de2bf11-3a48-4361-b4c9-f4b23dc5d1b2)
 4. Close the session.
 
+**Part 2: Design Your Climate App**\
+Design a Flask API based on the queries that just developed. To do so, use Flask to create routes as follows:
 
+1. /
+  - Start at the homepage.
+  - List all the available routes.
+
+2. /api/v1.0/precipitation
+  - Convert the query results to a dictionary by using the date as the key and prcp as the value.
+  - Return the JSON representation of your dictionary.
+
+3. /api/v1.0/stations
+  - Return a JSON list of stations from the dataset.
+    
+4. /api/v1.0/tobs
+  - Query the dates and temperature observations of the most active station for the previous year of data.
+  - Return a JSON list of temperature observations for the previous year.
+
+5. /api/v1.0/<start> and /api/v1.0/<start>/<end>
+  - Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
+  - For a specified start, calculate TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date.
+  - For a specified start date and end date, calculate TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.
