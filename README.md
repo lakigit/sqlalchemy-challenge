@@ -1,10 +1,10 @@
 # sqlalchemy-challenge
 Module 10 Challenge
 
-# Background
+# Description of Analysis
 The project's aim is to do a climate analysis of Honolulu, Hawaii. The following sections include the analysis. 
 
-**Part 1: Analyse and Explore the Climate Data**\
+**Part 1: Analyse and Explore the Climate Data**
 
 This section uses Python and SQLAlchemy to do a fundamental climate analysis and data exploration of the climate database. Specifically, use SQLAlchemy ORM queries, Pandas, and Matplotlib. To do so, complete the following steps:
 1. use the provided files (climate_starter.ipynb and hawaii.sqlite) to complete climate analysis and data exploration.
@@ -36,7 +36,7 @@ This section uses Python and SQLAlchemy to do a fundamental climate analysis and
   ![image](https://github.com/lakigit/sqlalchemy-challenge/assets/138610916/7de2bf11-3a48-4361-b4c9-f4b23dc5d1b2)
 4. Close the session.
 
-**Part 2: Design Your Climate App**\
+**Part 2: Design Your Climate App**
 
 Design a Flask API based on the queries that just developed. To do so, use Flask to create routes as follows:
 
